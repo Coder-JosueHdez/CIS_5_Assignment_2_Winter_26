@@ -15,8 +15,7 @@ int main()
     double weight = 0;
     double height = 0;
     int TestScore = 0;
-    setprecision(2);
-    double bmi = 0;
+    double bmi = 0.0;
 
     //Questions
     cout << "What is your name: ";
@@ -37,7 +36,8 @@ int main()
     bmi = weight / (height * height);
 
     //Statement
-    cout << "Hey, " << name << "! You're " << age << " years old! With a BMI of " << bmi;
+    cout << "Hey, " << name << "! You're " << age << " years old! With a BMI of ";
+    cout << fixed << setprecision(4) << bmi;
 
     //display BMI message
     if (bmi < 18.5)
