@@ -37,7 +37,7 @@ int main()
 
     //Statement
     cout << "Hey, " << name << "! You're " << age << " years old! With a BMI of ";
-    cout << fixed << setprecision(4) << bmi;
+    cout << fixed << setprecision(2) << bmi;
 
     //display BMI message
     if (bmi < 18.5)
